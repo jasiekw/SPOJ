@@ -1,0 +1,30 @@
+#include <iostream>
+#include <locale.h>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+    char c;
+    int a,b,w;
+    while(cin >>c>>a>>b){
+    cout << endl;
+
+    if (c=='+') w=a+b;
+
+    if (c=='-') w=a-b;
+
+    if (c=='*') w=a*b;
+
+    if (c=='/') w=a/b;
+
+    if (c=='%') w=a%b;
+
+    cout <<w<<endl;
+    cout <<endl;
+
+    }
+    system("pause");
+ return 0;
+}
