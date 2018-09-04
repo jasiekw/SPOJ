@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+main()
+{
+ int x,ile;
+ string tekst;
+
+ cin>>ile;
+ cout<<endl;
+
+ for(int j=0;j<ile;j++)
+  {
+    cin>>tekst;
+
+    x=tekst.length();
+    x=x/2;
+    cout<<endl;
+    for(int i=0;i<x;i++)cout<<tekst[i];
+    cout<<endl;
+    cout<<endl;
+   }
+return 0;
+}
