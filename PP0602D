@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int ile_liczb, ile_przes,x,y,z,c=0;
+
+    cin>>ile_liczb>>ile_przes;
+
+    x=ile_liczb;
+    y=ile_przes;
+    z=x-y;
+
+    int taba[ile_liczb], tabb[ile_liczb];
+
+    for (int a=0;a<ile_liczb;a++) cin>>taba[a];
+
+    for (int b=0;b<z;b++,y++) tabb[b]=taba[y];
+
+    for(z;z<x;z++,c++) tabb[z]=taba[c];
+
+    for (int c=0;c<ile_liczb;c++) cout<<tabb[c]<<" ";
+
+	return 0;
+}
