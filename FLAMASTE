@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+ 	char tekst[200];
+    int j,i=0,suma=0,ile;
+
+    cin>>ile;
+
+    for (int r=0;r<ile;r++)
+
+    {
+
+        cin >> tekst;
+
+            for (j=0;tekst[j]!='\0';++j)
+                {
+                    for (;tekst[j]==tekst[j+1];++j)
+                        {
+                            ++suma;
+                        }
+                    cout <<tekst[j];
+
+                    if (suma>=2) cout<<suma+1;
+
+                    if (suma==1) j--;
+
+                    suma=0;
+                }
+            cout<<endl;
+    }
+
+	return 0;
+}
