@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+  int ile_liczb,p;
+
+
+   cin>>p;
+
+    for (int r=0;p>r;r++)
+
+    {
+
+        cin >>ile_liczb;
+
+      int  tab[ile_liczb];
+
+        for (int i=0;i<ile_liczb;i++)
+            {
+                cin>>tab[i];
+            }
+        ile_liczb=ile_liczb-1;
+
+        for (ile_liczb;0<=ile_liczb;ile_liczb--) {cout<<tab[ile_liczb]<<" ";}
+        cout<<endl;
+    }
+
+	return 0;
+}
