@@ -1,0 +1,40 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    int iloscTestow,ileLiczb,*tablica,suma=0,bufor;
+    double srednia = 0;
+
+    cin>>iloscTestow;
+
+    for(int i=0;i<iloscTestow;i++)
+    {
+        cin>>ileLiczb;
+
+        tablica = new int[ileLiczb];
+
+        for(int i=0;i<ileLiczb;i++)
+        {
+            cin>>tablica[i];
+            suma += tablica[i];
+        }
+
+        srednia = static_cast<double>(suma)/static_cast<double>(ileLiczb);
+
+        bufor = tablica[0];
+
+        for(int i=1;i<ileLiczb;i++)
+        {
+            if(fabs(srednia - static_cast<double>(tablica[i]))<fabs(srednia - static_cast<double>(bufor))) bufor = tablica[i];
+        }
+
+        cout<<bufor<<endl;
+
+        delete [] tablica;
+        suma = 0;
+    }
+    return 0;
+}
