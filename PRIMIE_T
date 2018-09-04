@@ -1,0 +1,44 @@
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+bool pierwsza(int n)
+{
+  if(n<2) return false;
+
+  for(int i=2;i*i<=n;i++)
+
+    if(n%i==0) return false;
+
+  return true;
+}
+
+int main()
+
+
+{
+    int tab[100001],liczba,c;
+
+    cin >>c;
+
+    for (int i=0;i<c;i++)
+    {
+        cin >> liczba;
+        tab[i]=liczba;
+    }
+
+        for (int i=0;i<c;i++)
+
+        {
+
+        int n;
+        n=tab[i];
+
+        if (pierwsza(n) == 1) cout <<"TAK"<<endl;
+        if (pierwsza(n) == 0) cout <<"NIE"<<endl;
+
+        }
+    system("pause");
+return 0;
+}
