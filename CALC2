@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+
+main()
+{
+    char znak;
+    int a,b,tab[10];
+
+
+    while(cin>>znak){
+    cin>>a>>b;
+
+    cout<<endl;
+
+    if (znak=='z') tab[a]=b;
+
+    if (znak=='+') {cout<<tab[a]+tab[b]<<endl;}
+
+    if (znak=='-') {cout<<tab[a]-tab[b]<<endl;}
+
+    if (znak=='*') {cout<<tab[a]*tab[b]<<endl;}
+
+    if (znak=='/') {cout<<tab[a]/tab[b]<<endl;}
+
+    if (znak=='%') {cout<<tab[a]%tab[b]<<endl;}
+
+    }
+	return 0;
+}
