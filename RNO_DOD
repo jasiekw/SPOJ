@@ -1,0 +1,34 @@
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+    double ile_testow,ile_liczb,a,tab[100];
+
+    cin >>ile_testow;
+
+        for (int i=0;i<ile_testow;i++)
+
+        {
+            cin >>ile_liczb;
+
+                for (int j=0;j<ile_liczb;j++)
+                    {
+                        cin>>a;
+
+                        tab[i]+=a;
+                    }
+
+
+
+        }
+    for (int i=0;i<ile_testow;i++)
+
+    cout <<tab[i]<<endl;
+
+    system("pause");
+
+ return 0;
+}
