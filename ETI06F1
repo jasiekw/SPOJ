@@ -1,0 +1,22 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    double r,d;
+
+    double wynik,pi,b;
+
+    pi=3.141592654;
+
+    cin >>r>>d;
+
+    b=sqrt((r*r)-((d/2)*(d/2)));
+
+    wynik=pi*(b*b);
+
+    cout <<wynik;
+ return 0;
+}
