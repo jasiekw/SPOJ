@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+
+main()
+{
+
+int ile,n,x,y;
+
+cin>>ile;
+
+for (int r=0;r<ile;r++)
+
+{
+cout<<endl;
+cin>>n>>x>>y;
+cout<<endl;
+
+int tab[n];
+
+    for (int i=1;i<n;i++) tab[i]=i;
+
+    for (int i=1;i<n;i++)
+    {
+        if(tab[i]%x==0 && tab[i]%y!=0) cout<<tab[i]<<" ";
+    }
+
+    cout<<endl;
+}
+
+return 0;
+}
